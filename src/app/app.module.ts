@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './homepage/homepage.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import {RouterModule} from '@angular/router';
-import {NgZorroAntdModule} from 'ng-zorro-antd';
+import {NzButtonModule} from 'ng-zorro-antd';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import {NgZorroAntdModule} from 'ng-zorro-antd';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    NgZorroAntdModule
+    NzButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

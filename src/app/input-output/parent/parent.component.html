@@ -6,7 +6,7 @@
   </div>
   <div class="child">
     <app-child
-      [messageFromParent]="sendMessageToChild()"
+      [messageFromParent]="sendMessageToChild"
       (sendMessageToParentEvent)="receiveMessageFromChild($event)"></app-child>
   </div>
 </div>
