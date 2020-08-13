@@ -1,0 +1,5 @@
+<div>
+  <h1>I am Child</h1>
+  <button nz-button nzType="primary" (click)="sendMessageToParent()">Send message to Parent</button>
+  <h2 *ngIf="messageFromParent!==null"> {{messageFromParent}} </h2>
+</div>
