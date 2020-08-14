@@ -12,8 +12,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './homepage/homepage.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import {RouterModule} from '@angular/router';
-import {NzButtonModule} from 'ng-zorro-antd';
+import {NzButtonModule, NzInputModule} from 'ng-zorro-antd';
 import { HighlightDirective } from './directive/highlight.directive';
+import { NgModelComponent } from './ng-model/ng-model.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,16 @@ import { HighlightDirective } from './directive/highlight.directive';
     ChildComponent,
     HomepageComponent,
     SubscribeComponent,
-    HighlightDirective
+    HighlightDirective,
+    NgModelComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     NzButtonModule,
+    NzInputModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
