@@ -13,6 +13,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import {RouterModule} from '@angular/router';
 import {NzButtonModule} from 'ng-zorro-antd';
+import { HighlightDirective } from './directive/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {NzButtonModule} from 'ng-zorro-antd';
     ChildFourComponent,
     ChildComponent,
     HomepageComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

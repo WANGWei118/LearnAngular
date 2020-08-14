@@ -1,6 +1,6 @@
 <div class="container">
   <div class="parent">
-    <h1>I am Parent</h1>
+    <h1 appHighlight>I am Parent</h1>
     <button nz-button nzType="primary" (click)="sendMessageToChildEvent()">Send message to Child</button>
     <h2 *ngIf="messageFromChild!==null"> {{messageFromChild}} </h2>
   </div>
