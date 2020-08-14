@@ -6,8 +6,8 @@
   align-items: center;
 }
 
-.input-class, .sub-class, .ng-model-class{
-  width: 30%;
+.input-class, .sub-class, .ng-model-class, .routing-class{
+  width: 23%;
   height: 40vh;
   text-align: center;
   color: white;

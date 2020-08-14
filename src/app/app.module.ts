@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ParentComponent } from './input-output/parent/parent.component';
@@ -16,6 +16,8 @@ import {NzButtonModule, NzInputModule} from 'ng-zorro-antd';
 import { HighlightDirective } from './directive/highlight.directive';
 import { NgModelComponent } from './ng-model/ng-model.component';
 import {FormsModule} from '@angular/forms';
+import {ParentCommonModule} from './routes/parent.module';
+import {RouteParentComponent} from './routes/route-parent/route-parent.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import {FormsModule} from '@angular/forms';
     HomepageComponent,
     SubscribeComponent,
     HighlightDirective,
-    NgModelComponent
+    NgModelComponent,
+    RouteParentComponent
   ],
   imports: [
     BrowserModule,
@@ -38,8 +41,10 @@ import {FormsModule} from '@angular/forms';
     NzButtonModule,
     NzInputModule,
     FormsModule,
+    ParentCommonModule
   ],
   providers: [],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
